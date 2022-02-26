@@ -2,17 +2,14 @@ public class Main {
 
    	public static void main(String[] args) {
 		int[] nums = {10, 3, 2, 7, 6, 8, 4, 1, 5, 9};
-    //    printArray(nums);
-	//	bubbleSort(nums);
-    //  selectionSort(nums);
-    //  insertionSort(nums);
-	//	printArray(nums);
+		bubbleSort(nums);
+    		selectionSort(nums);
+    		insertionSort(nums);
+		printArray(nums);
 
        }
 
-//Write these three methods. 
 
-//hint: use a nested for loop!
      public static void bubbleSort(int[] nums) {
 
          for (int n = 0; n < nums.length - 1; n++){
@@ -29,7 +26,7 @@ public class Main {
 
      }
 
-//hint: use a nested for loop!
+
     public static void selectionSort(int[] nums) {
         for (int n = 0; n < nums.length; n++){
             int smallest = 100;
@@ -47,10 +44,9 @@ public class Main {
         }
     }
 
-//hint: use a for loop and while loop!
+
     public static void insertionSort(int[] nums) {
 
-    	// int n = nums.length;  
          for (int j = 1; j < nums.length; j++) {  
              int key = nums[j];  
              int i = j;  
@@ -64,7 +60,6 @@ public class Main {
     }
 
     
-    // a useful method for printing the contents of an array of ints
     public static void printArray(int[] arr) {
     	for (int i = 0; i < arr.length; i++) {
     		System.out.print(arr[i] + " ");
