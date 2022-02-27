@@ -48,13 +48,13 @@ public class Main {
     public static void insertionSort(int[] nums) {
 
          for (int j = 1; j < nums.length; j++) {  
-             int key = nums[j];  
+             int temp = nums[j];  
              int i = j;  
-             while ( (i > 0) && ( nums [i-1] > key ) ) {  
+             while ( (i > 0) && ( nums [i-1] > temp ) ) {  
                  nums [i] = nums [i-1];  
                  i--;  
              }  
-             nums[i] = key;  
+             nums[i] = temp;  
          }  
 
     }
